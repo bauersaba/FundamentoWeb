@@ -4,26 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produtos eletronicos</title>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <style>
+        audio{
+            float: right;
+            background-color: white;
+        }
+        img{
+            border: 2px groove;
+        }
         #pagina{
             height: 100%;
             width: 100%;
             background-color: white;
-            color: blue;
+            color: rgb(190, 16, 118);
+            font-family: 'Audiowide', cursive;
+            font-size: 28px;
+        }
+        table, tr,th,td{
+            border: 1px, solid black;
+            border-radius: 10px;
         }
     </style>
 <body>
-    <div id="pagina">
+    <div id="pagina" style="background-color: white">
         Tudo em eletronicos
+        <audio controls>
+            <source src="audio/ACDC - Who Made Who.mp3" type="audio/mpeg">
+        </audio>
     </div>
     <table>
         <tr>
-            <th><img src="imagens/goldstar.jpg"  height="70px" width="70px" alt=""></th>
-            <th><img src="imagens/cdrom.jpg" height="70px" width="70px" alt=""></th>
-            <th><img src="imagens/teclado.jpg" height="70px" width="70px" alt=""></th>
-            <th><img src="imagens/trackball.jpg" height="70px" width="70px" alt=""></th>
+            <img src="imagens/capa_eletronica.jpg"  height="200px" width="99%" alt="">
+        </tr>
+        <tr>
+            <th><img src="imagens/lg.jpg"  height="200px" width="200px" alt="LG"></th>
+            <th><img src="imagens/cdrom.jpg" height="200px" width="200px" alt="CDROM"></th>
+            <th><img src="imagens/teclado.jpg" height="200px" width="200px" alt="Teclado"></th>
+            <td><img src="imagens/trackball.jpg" height="200px" width="200px" alt="Mouse Track"></td>
+            <td><img src="imagens/Samsung.jpeg" height="200px" width="200px" alt="Samsung"></td>
+        </tr>
+        <tr>
+            <td><img src="imagens/capamonitor.jpg" height="200px" width="200px" alt="Capa"></td>
+            <td><img src="imagens/nintendo64.jpg" height="200px" width="200px" alt="Nintendo"></td>
+            <td><img src="imagens/mastersystem.jpg" height="200px" width="200px" alt="MasterSystem"></td>
+            <td><img src="imagens/modem.jpeg" height="200px" width="200px" alt="US Robotics"></td>
+            <td><img src="imagens/mouseleader.jpg" height="200px" width="200px" alt="Mouse"></td>
         </tr>
     </table>
 </body>

@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos eletronicos</title>
 </head>
+<link rel="icon" type="image/x-icon" href="imagens/icone_eletronica.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 <style>
+
     .fiel_normal{width:150px;background-color:rgb(255, 255, 255)}
-    .button{width: 150px;background-color: black; color: white;}
+    .button{width: 160px;background-color: black; color: white;}
+    .a{color: white;}
+ 
     table, tr, td{
         font-family: 'Audiowide', cursive;
         width: 50%;
@@ -63,33 +67,32 @@
     #conteudo{
         float: inline-start;
         width: 100%; 
-        min-height: 470px;           
+        min-height: 200px;           
         border: 1px ridge gainsboro;     
-        background: rgb(241, 239, 239);
-        -webkit-box-flex: 3;
-        -ms-flex: 3;
-        flex: 3;
+        background: white;
+
     }
     #rodape{
+        text-align: center;
         width: 100%; 
-        height: 50px;                
+        height: 30px;                
         border: 1px ridge gainsboro;     
         background: ghostwhite;
+        font-family: 'Audiowide', cursive;
     }
 </style>
 <body>
-
     <div id="cabecalho"  >
         <img src="imagens/headimg.jpg" width="170px" height="100px" id="logoleft">
-        <table>            
+        <table>                  
             <tr>
                 <th>Produtos</th>
                 <th>Novidades</th>
                 <th>Serviços</th>
                 <th>Contato</th>
+                <th><a class = a  href="index.html">Voltar</a></th>
             </tr>
-
-        </table>
+        </table>       
     </div>
     <div id="menu">
         Menu
@@ -97,33 +100,32 @@
             
              <ul>
                 <li><a href="monitor.html" target="conteudo" style="color: rgb(66, 15, 160);">Monitores</a></li>
-                <li><a href="Marcar pagina do item" style="color: rgb(66, 15, 160);">CPU´s</a></li>
-                <li><a href="Marcar pagina do item" style="color: rgb(66, 15, 160);">Acessórios</a></li>
-                <li><a href="Marcar pagina do item" style="color: rgb(66, 15, 160);">Video Game</a></li>
-                <li><a href="Marcar pagina do item" style="color: rgb(66, 15, 160);">TV´s</a></li>
+                <li><a href="cpu.html" target="conteudo" style="color: rgb(66, 15, 160);">CPU´s</a></li>
+                <li><a href="perifericos.html" target="conteudo" style="color: rgb(66, 15, 160);">Acessórios</a></li>
+                <li><a href="videogame.html" target="conteudo" style="color: rgb(66, 15, 160);">Video Game</a></li>
+                <li><a href="televisor.html" target="conteudo" style="color: rgb(66, 15, 160);">TV´s</a></li>
             </ul>
     </div>
     <div id="formulario">
-        Cotação
-        <br>
+        Cotação:
+        <br><br>
         <form action="">
-            <label for="firstname" >Nome</label><br>
+            <label for="firstname" >Nome:</label><br>
             <input type="text" id="firstname" name="firstname" class="fiel_normal"><br>    
-            <label for="lastname">Sobrenome</label><br>
+            <label for="lastname">Sobrenome:</label><br>
             <input type="text" id="lastname" name="lastname" class="fiel_normal"><br>
-            <label for="e-mail">e-mail</label><br>
+            <label for="e-mail">E-mail:</label><br>
             <input type="email" id="e-mail" name="e-mail" class="fiel_normal"><br>
             <input type="submit" value="Enviar" class="button">
         </form>
     </div>
-
     </div>
     <div id="conteudo">
-        <iframe src="conteudo.html" name="conteudo" height="800px" width="900px" frameborder="0"></iframe>
+        <iframe src="conteudo.html" name="conteudo" height="800px" width="82%" frameborder="0"></iframe>
 
     </div>
     <div id="rodape">
-        rodape com obs e botões de controle e Copyright
+        Criado e desenvolvido por: Marcelo Bauer - RA 32310 - Sistemas de Informação-Unasp 2022.
     </div>
 
 </body>
